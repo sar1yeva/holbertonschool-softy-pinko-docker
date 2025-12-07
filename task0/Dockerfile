@@ -1,8 +1,8 @@
-# Base image olaraq ən son Ubuntu istifadə et
+# Use the latest Ubuntu as the base image
 FROM ubuntu:latest
 
-# APT paketlərini yenilə və mövcud proqramları upgrade et
+# Update APT packages and upgrade existing software
 RUN apt-get update && apt-get upgrade -y
 
-# Container işə düşəndə "Hello, World!" yazdır
+# When the container starts, print "Hello, World!"
 CMD echo "Hello, World!"
